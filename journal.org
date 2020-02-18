@@ -1,3 +1,0 @@
-#+title: ISB journal 1
-#+author: Gruppe 1
-#+date: 24/02/2020

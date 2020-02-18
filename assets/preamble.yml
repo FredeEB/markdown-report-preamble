@@ -1,0 +1,6 @@
+---
+geometry: margin=2.5cm, top=3cm, bottom=2cm, headheight=39pt
+indent: true
+csl: "assets/ieee.csl"
+bibliography: "assets/references.bib"
+---
