@@ -16,6 +16,8 @@ date: 24/02/2020
     \end{tabular}
 \end{table}
 
+![](assets/ase-logo/ASE-uk-blaa.png)
+
 \newpage
 
 \thispagestyle{empty}
