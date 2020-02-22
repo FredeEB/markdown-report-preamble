@@ -1,6 +1,43 @@
 ---
-geometry: margin=2.5cm, top=3cm, bottom=2cm, headheight=39pt
+geometry: margin=2.5cm, top=3cm, bottom=3cm, headheight=39pt
 indent: false
 csl: "assets/ieee.csl"
 bibliography: "assets/references.bib"
+cref: true
+chaptersDepth: 2
+chapters: true
+sectionsDepth: -1
+codeBlockCaptions: true
+autoEqnLabels: true
+numberSections: true
+
+lofTitle: "Liste over Figurer"
+lotTitle: "Liste over Tabeller"
+lolTitle: "Liste over Kodeudsnit"
+
+figureTitle: "Figur"
+tableTitle: "Tabel"
+listingTitle: "Kodeudsnit"
+equationTitle: "Ligning"
+
+figPrefix:
+  - 'figur'
+  - 'figurene'
+eqnPrefix:
+  - 'ligning'
+  - 'lingningerne'
+tblPrefix:
+  - 'tabel'
+  - 'tabellerne'
+lstPrefix:
+  - 'kodeudsnit'
+  - 'kodeudsnittene'
+secPrefix:
+  - 'afsnit'
+  - 'afsnittene'
+
+header-includes: |
+  \usepackage{float}
+  \floatplacement{figure}{H}
+
 ---
