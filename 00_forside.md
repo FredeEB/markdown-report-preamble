@@ -17,3 +17,13 @@ date: 24/02/2020
 \end{table}
 
 \newpage
+
+\thispagestyle{empty}
+\renewcommand{\contentsname}{Indholdsfortegnelse}
+\tableofcontents
+
+\listoffigures
+
+\newpage
+
+\setcounter{page}{1}
