@@ -1,3 +1,4 @@
+SOURCEFILES := *.md
 ASSETDIR = assets
 FILTERS = pandoc-crossref pandoc-citeproc
 OUTFILE = out.pdf
@@ -12,5 +13,5 @@ all: $(OUTFILE)
 clean:
 	rm -rf $(OUTFILE)
 
-$(OUTFILE): *.md $(ASSETDIR)/preamble.yml
-	pandoc $(addprefix -F, $(FILTERS)) $(ASSETDIR)/preamble.yml $^ -o $(OUTFILE) $(addprefix --, $(FLAGS))
+$(OUTFILE): $(SOURCEFILES) $(ASSETDIR)/preamble.yml img/*
+	pandoc $(addprefix -F, $(FILTERS)) $(ASSETDIR)/preamble.yml $(SOURCEFILES) -o $(OUTFILE) $(addprefix --, $(FLAGS))
