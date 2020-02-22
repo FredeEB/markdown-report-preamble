@@ -12,5 +12,5 @@ all: $(OUTFILE)
 clean:
 	rm -rf $(OUTFILE)
 
-$(OUTFILE): *.md
+$(OUTFILE): *.md $(ASSETDIR)/preamble.yml
 	pandoc $(addprefix -F, $(FILTERS)) $(ASSETDIR)/preamble.yml $^ -o $(OUTFILE) $(addprefix --, $(FLAGS))
