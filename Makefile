@@ -13,4 +13,4 @@ clean:
 	rm -rf $(OUTFILE)
 
 $(OUTFILE): *.md
-	pandoc $(addprefix -F, $(FILTERS)) -H $(ASSETDIR)/header.tex $(ASSETDIR)/preamble.yml *.md -o $(OUTFILE) $(addprefix --, $(FLAGS))
+	pandoc $(addprefix -F, $(FILTERS)) $(ASSETDIR)/preamble.yml $^ -o $(OUTFILE) $(addprefix --, $(FLAGS))
