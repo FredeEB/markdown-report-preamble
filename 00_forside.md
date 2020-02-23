@@ -2,8 +2,10 @@
 title: ISB journal 1
 date: 24/02/2020
 ---
+\renewcommand{\contentsname}{Indholdsfortegnelse}
 
 \cfoot{Side \thepage\ af \pageref{LastPage}}
+\thispagestyle{empty}
 
 \vspace*{6em}
 \begin{table}[h]
@@ -16,12 +18,11 @@ date: 24/02/2020
     \end{tabular}
 \end{table}
 
-![](assets/ase-logo/ASE-uk-blaa.png)
-
 \newpage
 
-\thispagestyle{empty}
-\renewcommand{\contentsname}{Indholdsfortegnelse}
+\setcounter{page}{1}
+\pagenumbering{Roman}
+
 \tableofcontents
 
 \listoffigures
@@ -29,3 +30,6 @@ date: 24/02/2020
 \newpage
 
 \setcounter{page}{1}
+\pagenumbering{arabic}
+
+\pagestyle{fancy}

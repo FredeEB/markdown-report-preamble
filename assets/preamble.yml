@@ -39,5 +39,7 @@ secPrefix:
 header-includes: |
   \usepackage{float}
   \floatplacement{figure}{H}
+  \usepackage{fancyhdr}
+  \usepackage{lastpage}
 
 ---
