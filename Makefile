@@ -13,5 +13,5 @@ all: $(OUTFILE)
 clean:
 	rm -rf $(OUTFILE)
 
-$(OUTFILE): $(SOURCEFILES) $(ASSETDIR)/preamble.yml img/*
+$(OUTFILE): $(SOURCEFILES) $(ASSETDIR)/preamble.yml
 	pandoc $(addprefix -F, $(FILTERS)) $(ASSETDIR)/preamble.yml $(SOURCEFILES) -o $(OUTFILE) $(addprefix --, $(FLAGS))
