@@ -1,6 +1,6 @@
 SOURCEFILES := *.md
 ASSETDIR = assets
-FILTERS = pandoc-crossref pandoc-citeproc
+FILTERS = pandoc-plantuml pandoc-crossref pandoc-citeproc
 OUTFILE = out.pdf
 FLAGS =
 
